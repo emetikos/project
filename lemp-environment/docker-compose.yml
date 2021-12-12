@@ -36,7 +36,7 @@ services:
         - "3001:8025"
 
     nginx:
-      container_name: nginX
+      container_name: dmh-nginx
       build:
         context: ./nginx
 #        args:

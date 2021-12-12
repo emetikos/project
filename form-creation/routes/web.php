@@ -1,7 +1,6 @@
 <?php
 
-
-use App\Models\User;
+use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,6 +18,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', function () {
-    dump(User::all());
-});
+//Route::get('/form', function () {
+//    return view('pages.form');
+//});
+
+
+Route::get('form-generic/{form_id}',[FormController::class, 'generic']);
+Route::get('show-form/{hash}',[FormController::class, 'show_form']);
+
+Route::get('/form-display', [FormController::class, 'getForm']);
+Route::get('/form-data', [FormController::class, 'getData']);
