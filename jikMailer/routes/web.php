@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\CoreController;
+use App\Http\Controllers\MailController;
 use App\Mail\SendMail;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
@@ -16,14 +18,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/test', function () {
+    return view('emails.testMail');
+});
+
+Route::get('/mail', function () {
     return view('emails.sendmail');
 });
 
-//Route::get('/mail', [CoreController::class, 'index']);
 
 
-Route::get('/mail', function() {
 
-    Mail::to('spirosvelos@gmail.com')->send(new SendMail());
-});
+
+Route::get('/users', [MailController::class, 'users']);
+Route::get('/applications', [MailController::class, 'userApplications']);
+
+
+//Route::get('/mail', function() {
+//
+//    Mail::to('spirosvelos@gmail.com')->send(new SendMail());
+//});

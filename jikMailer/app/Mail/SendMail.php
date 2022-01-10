@@ -31,7 +31,7 @@ class SendMail extends Mailable
 
         return $this->from('info@jiksoftware.ltd.uk')
                      ->replyTo(['address' => 'info@jiksoftware.ltd.uk'])
-                    ->view('emails.sendmail');
+                     ->view('emails.testMail');
 
 
 //        return $this->markdown('emails.sendmail');
