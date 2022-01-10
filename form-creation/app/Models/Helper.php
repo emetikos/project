@@ -12,8 +12,9 @@ class Helper extends Model
 //    use SoftDeletes;
 
     protected $fillable = [
-        'form_id',
-        'input_values'
+        'formId',
+        'formName',
+        'inputValues'
     ];
 
 }

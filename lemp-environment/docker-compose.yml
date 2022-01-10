@@ -21,7 +21,9 @@ services:
         - "8181:80"
       environment:
         - SESSION_TIMEOUT=604800 # 7 days session timeout
-#        - PMA_ARBITRARY=1 # Uncomment this if you want to be able to choose the db container e.g. "db"
+        - UPLOAD_LIMIT=300M
+#       - PMA_ARBITRARY=1 # Uncomment this if you want to be able to choose the db container e.g. "db"
+
       depends_on:
         - db
 

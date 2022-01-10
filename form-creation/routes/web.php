@@ -18,13 +18,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::get('/form', function () {
-//    return view('pages.form');
-//});
 
 
-Route::get('form-generic/{form_id}',[FormController::class, 'generic']);
-Route::get('show-form/{hash}',[FormController::class, 'show_form']);
+Route::get('forms/create/{formHash}',[FormController::class, 'create']);
 
-Route::get('/form-display', [FormController::class, 'getForm']);
-Route::get('/form-data', [FormController::class, 'getData']);
+Route::get('forms/show/{formHash}',[FormController::class, 'show']);
+
+Route::get('forms/update/{formHash}',[FormController::class, 'update']);
+
+Route::get('/form-display', [FormController::class, 'store']);
+
+//Route::get('/form-data', [FormController::class, 'getData']);

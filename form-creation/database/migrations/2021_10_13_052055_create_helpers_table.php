@@ -15,8 +15,9 @@ class CreateHelpersTable extends Migration
     {
         Schema::create('helpers', function (Blueprint $table) {
             $table->id();
-            $table->string('form_id');
-            $table->json('input_values');
+            $table->string('formId');
+            $table->string('formName');
+            $table->json('inputValues');
             $table->timestamps();
 
         });

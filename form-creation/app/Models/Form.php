@@ -17,6 +17,7 @@ class Form extends Model
         'form_id',
         'user_id',
         'form_data',
+        'version',
         'deleted_data'
     ];
 
