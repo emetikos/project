@@ -9,7 +9,7 @@
 
         @isset($fields)
                     <h1> {{ ucfirst(trans($name)) }} Form </h1>
-            <form method="GET" action="{{url('form-display')}}">
+            <form method="GET" action="{{url('forms/store')}}">
 
                 <div class="form-group">
                     @foreach($fields as $element)

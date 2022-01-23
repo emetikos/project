@@ -22,10 +22,10 @@ Route::get('/', function () {
 
 Route::get('forms/create/{formHash}',[FormController::class, 'create']);
 
-Route::get('forms/show/{formHash}',[FormController::class, 'show']);
+Route::get('forms/show/{formHash}/{userHash}',[FormController::class, 'show']);
 
-Route::get('forms/update/{formHash}',[FormController::class, 'update']);
+Route::get('forms/update/{formHash}/{userHash}',[FormController::class, 'update']);
 
-Route::get('/form-display', [FormController::class, 'store']);
+Route::get('forms/store', [FormController::class, 'store']);
 
-//Route::get('/form-data', [FormController::class, 'getData']);
+Route::get('forms/form-update', [FormController::class, 'storeUpdated']);

@@ -19,20 +19,20 @@ class FormController extends Controller
      * @param $formHash
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-    public function create($formHash) {
+    public function create($hash) {
 
         $form = new FormManager();
-        return $form->loadForm($formHash);
+        return $form->loadForm($hash);
     }
 
     /**
      * @param $formHash
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-    public function show($formHash){
+    public function show($formHash,$userHash){
 
         $form = new FormManager();
-        return $form->showUserForm($formHash);
+        return $form->showUserForm($formHash,$userHash);
 
     }
 
@@ -46,11 +46,18 @@ class FormController extends Controller
         return $form->saveUserInformation($request);
     }
 
-    public function update($hash){
+    public function update($hash,$userHash){
 
         $form = new FormManager();
-        return $form->updateUserForm($hash);
+        return $form->loadFormToUpdate($hash,$userHash);
     }
+
+    public function storeUpdated(Request $request){
+
+        $form = new FormManager();
+        return $form->updateUserInformation($request);
+    }
+
 
 
 

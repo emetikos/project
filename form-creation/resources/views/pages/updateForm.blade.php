@@ -10,7 +10,7 @@
         @isset($formData)
             <h1> Update {{ ucfirst(trans($formName)) }} form </h1>
 
-            <form method="GET" action="{{url('form-display')}}">
+            <form method="GET" action="{{ url('forms/form-update') }}">
 
                 <div class="form-group">
                     @foreach($formData as $element)
@@ -23,15 +23,15 @@
 
                         @if($element['type'] === 'text')
                             <div class="form-group">
-                                <label for="{{ $element['id'] }}">Your current {{ ucfirst( $element['label'] ) }} : {{ $element['userValue'] }}</label>
-                                <input type="{{ $element['type'] }}" class="{{ $element['class'] }}" id="{{ $element['id'] }}" placeholder="change your {{ ucfirst(trans($element['name'])) }}"  name="{{ $element['name'] }}">
+{{--                                <label for="{{ $element['id'] }}">Your current {{ ucfirst( $element['label'] ) }} : {{ $element['userValue'] }}</label>--}}
+                                <input type="{{ $element['type'] }}" class="{{ $element['class'] }}" id="{{ $element['id'] }}" placeholder="click to change your {{ ucfirst(trans($element['name'])) }} "  name="{{ $element['name'] }}">
                             </div>
                         @endif
 
                         @if($element['type'] === 'email')
                             <div class="form-group">
-                                <label for="{{ $element['id'] }}">Your current {{ ucfirst( $element['label'] ) }} : {{ $element['userValue'] }}</label>
-                                <input type="{{ $element['type'] }}" class="{{ $element['class'] }}" name="{{ $element['name'] }}" placeholder="change your {{ ucfirst(trans($element['name'])) }}">
+{{--                                <label for="{{ $element['id'] }}">Your current {{ ucfirst( $element['label'] ) }} : {{ $element['userValue'] }}</label>--}}
+                                <input type="{{ $element['type'] }}" class="{{ $element['class'] }}" name="{{ $element['name'] }}" placeholder="click to change your {{ ucfirst(trans($element['name'])) }} ">
                             </div>
                         @endif
 
@@ -44,7 +44,7 @@
 
                         @if($element['type'] === 'textarea')
                             <div class="form-group">
-                                <label for="{{ $element['id'] }}">Your current {{ ucfirst( $element['label'] ) }} : {{ $element['userValue'] }}</label>
+{{--                                <label for="{{ $element['id'] }}">Your current {{ ucfirst( $element['label'] ) }} : {{ $element['userValue'] }}</label>--}}
                                 <textarea type="{{ $element['type'] }}" class="{{ $element['class'] }}" id="{{ $element['id'] }}" name="textarea"
                                           rows="{{ $element['rows'] }}" placeholder="change your text"></textarea>
                             </div>
