@@ -1,582 +1,355 @@
-<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv=Content-Type content="text/html; charset=utf-8"><meta name=Generator content="Microsoft Word 15 (filtered medium)"><style><!--
-        /* Font Definitions */
-        @font-face
-        {font-family:"Cambria Math";
-            panose-1:2 4 5 3 5 4 6 3 2 4;}
-        @font-face
-        {font-family:Calibri;
-            panose-1:2 15 5 2 2 2 4 3 2 4;}
-        /* Style Definitions */
-        p.MsoNormal, li.MsoNormal, div.MsoNormal
-        {margin:0cm;
-            font-size:11.0pt;
-            font-family:"Calibri",sans-serif;}
-        h1
-        {mso-style-priority:9;
-            mso-style-link:"Heading 1 Char";
-            mso-margin-top-alt:auto;
-            margin-right:0cm;
-            mso-margin-bottom-alt:auto;
-            margin-left:0cm;
-            font-size:24.0pt;
-            font-family:"Arial",sans-serif;
-            font-weight:bold;}
-        h3
-        {mso-style-priority:9;
-            mso-style-link:"Heading 3 Char";
-            mso-margin-top-alt:auto;
-            margin-right:0cm;
-            mso-margin-bottom-alt:auto;
-            margin-left:0cm;
-            font-size:13.5pt;
-            font-family:"Arial",sans-serif;
-            font-weight:bold;}
-        a:link, span.MsoHyperlink
-        {mso-style-priority:99;
-            color:blue;
-            text-decoration:underline;}
-        span.Heading1Char
-        {mso-style-name:"Heading 1 Char";
-            mso-style-priority:9;
-            mso-style-link:"Heading 1";
-            font-family:"Arial",sans-serif;
-            font-weight:bold;}
-        span.Heading3Char
-        {mso-style-name:"Heading 3 Char";
-            mso-style-priority:9;
-            mso-style-link:"Heading 3";
-            font-family:"Arial",sans-serif;
-            font-weight:bold;}
-        .MsoChpDefault
-        {mso-style-type:export-only;}
-        @page WordSection1
-        {size:612.0pt 792.0pt;
-            margin:72.0pt 72.0pt 72.0pt 72.0pt;}
-        div.WordSection1
-        {page:WordSection1;}
-        --></style>
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Simple Transactional Email</title>
+    <style>
+        @media only screen and (max-width: 620px) {
+            table.body h1 {
+                font-size: 28px !important;
+                margin-bottom: 10px !important;
+            }
+
+            table.body p,
+            table.body ul,
+            table.body ol,
+            table.body td,
+            table.body span,
+            table.body a {
+                font-size: 16px !important;
+            }
+
+            table.body .wrapper,
+            table.body .article {
+                padding: 10px !important;
+            }
+
+            table.body .content {
+                padding: 0 !important;
+            }
+
+            table.body .container {
+                padding: 0 !important;
+                width: 100% !important;
+            }
+
+            table.body .main {
+                border-left-width: 0 !important;
+                border-radius: 0 !important;
+                border-right-width: 0 !important;
+            }
+
+            table.body .btn table {
+                width: 100% !important;
+            }
+
+            table.body .btn a {
+                width: 100% !important;
+            }
+
+            table.body .img-responsive {
+                height: auto !important;
+                max-width: 100% !important;
+                width: auto !important;
+            }
+        }
+        @media all {
+            .ExternalClass {
+                width: 100%;
+            }
+
+            .ExternalClass,
+            .ExternalClass p,
+            .ExternalClass span,
+            .ExternalClass font,
+            .ExternalClass td,
+            .ExternalClass div {
+                line-height: 100%;
+            }
+
+            .apple-link a {
+                color: inherit !important;
+                font-family: inherit !important;
+                font-size: inherit !important;
+                font-weight: inherit !important;
+                line-height: inherit !important;
+                text-decoration: none !important;
+            }
+
+            #MessageViewBody a {
+                color: inherit;
+                text-decoration: none;
+                font-size: inherit;
+                font-family: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+            }
+
+            .btn-primary table td:hover {
+                background-color: white !important;
+            }
+
+            .btn-primary a:hover {
+                background-color: white !important;
+                border-color: #554595 !important;
+                color: #554595 !important;
+            }
+        }
+    </style>
 </head>
-<body lang="EN-GB" link="blue" vlink="#954F72" style="word-wrap: break-word;">
-<div class="WordSection1">
-    <div style="mso-element: para-border-div; border: none; border-top: solid #e1e1e1 1pt; padding: 3pt 0cm 0cm 0cm;">
-        <p class="MsoNormal" style="border: none; padding: 0cm;">
-            <b>From: </b><a href="mailto:info@jobsinkent.com">jobsinkent.com</a><br />
-            <b>Sent: </b>06 January 2022 11:01<br />
-            <b>To: </b><a href="mailto:spirosvelos@gmail.com">spirosvelos@gmail.com</a><br />
-            <b>Subject: </b>5 New Matches For Your 'IT &amp; Telecoms jobs in Kent' Alert
-        </p>
-    </div>
-    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
-    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width: 100%;">
-        <tr>
-            <td width="100%" valign="top" style="width: 100%; background: #e9ecef; padding: 3pt 3pt 3pt 3pt;">
-                <div align="center">
-                    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0">
+<body class="" style="background-color: #f6f6f6; font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.4; margin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+
+
+
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f6f6f6; width: 100%;" width="100%" bgcolor="#f6f6f6">
+    <tr>
+        <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top">&nbsp;</td>
+        <td class="container" style="font-family: sans-serif; font-size: 14px; vertical-align: top; display: block; max-width: 580px; padding: 10px; width: 580px; margin: 0 auto;" width="580" valign="top">
+            <div class="content" style="box-sizing: border-box; display: block; margin: 0 auto; max-width: 580px; padding: 10px;">
+
+                <!-- START CENTERED WHITE CONTAINER -->
+                <table role="presentation" class="main" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background: #ffffff; border-radius: 3px; width: 100%;" width="100%">
+
+                    <!-- START MAIN CONTENT AREA -->
+                    <tr>
+                        <!-- START OF THE HEADER -->
+                        <td class="wrapper" style="font-family: sans-serif; font-size: 14px; vertical-align: top; box-sizing: border-box; padding: 20px;" valign="top">
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%">
+                                <td style="background: #554595; padding: 16pt;">
+                          <span style="font-family: 'Arial', sans-serif;">
+                              <a href="https://www.jobsinkent.com" style="text-decoration: none;">
+                                  <strong><span style="font-size: 22.5pt; font-family: 'Arial', sans-serif; color: white; text-decoration: none;">jobsinkent.com</span></strong>
+                              </a>
+                              <span style="color: black;"> </span>
+                          </span>
+                                    <b><span style="font-size: 13.5pt; font-family: 'Arial', sans-serif; color: white;">Kent's largest jobsite</span></b>
+                                    <span style="font-family: 'Arial', sans-serif; color: black;"> </span><span style="font-family: 'Arial', sans-serif;"></span>
+                                </td>
+                                <!-- END OF THE HEADER -->
+                                <tr>
+                                    <!-- MAIN MESSAGE -->
+                                    <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top">
+                                    <div style="width:100%; height: 150px; background-size: cover; background-image:url({{url('https://jobsinkent.com/assets/shared/jobseekers-promo.jpg')}}) " >
+
+                                    </div>
+
+
+                                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px; margin-top: 18px;">
+                                            Hundreds of new direct employers have advertised their jobs this month and you can now find them easily with a new <strong>DIRECT EMPLOYER SEARCH</strong> button,
+                                            <a href="https://www.jobsinkent.com/search?t=b" style="text-decoration: none;"><strong>click here</strong></a>.
+                                        </p>
+
+                                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px; margin-top: 18px;">
+                                            You will find jobs that <strong>you won't find on any other website.</strong>
+                                            Search our latest jobs or we can email our latest
+                                            jobs directly to you, simply
+                                            <a href="https://www.jobsinkent.com/jobseekers/login"
+                                               style="text-decoration: none"><strong>log-in</strong></a> to your account and set up daily job alerts
+                                        </p>
+
+                                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px; margin-top: 18px;"><strong>JobsInKent</strong>
+                                            is working hard to find the best local jobs for YOU.
+                                        </p>
+                                        <!-- END OF MAIN MESSAGE -->
+
+                                        <!-- SEARCH BUTTON-->
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; box-sizing: border-box; width: 100%;" width="100%">
+                                            <tbody>
+                                            <tr>
+                                                <td align="center" style="font-family: sans-serif; font-size: 14px; vertical-align: top; padding-bottom: 15px;" valign="top">
+                                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: auto;">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td style="font-family: sans-serif; font-size: 14px; vertical-align: top; border-radius: 5px; text-align: center; background-color: #28a745;" valign="top" align="center" bgcolor="#28a745"> <a href="https://www.jobsinkent.com/search" target="_blank" style="border: solid 1px #28a745; border-radius: 5px; box-sizing: border-box; cursor: pointer; display: inline-block; font-size: 20px; font-weight: bold; margin: 0; padding: 12px 25px; text-decoration: none; text-transform: capitalize; background-color: #28a745; border-color: #28a745; color: #ffffff;">Search Jobs</a> </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- END OF SEARCH BUTTON-->
+                                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px; border-top: 1px solid #f6f6f6; padding-top: .5rem;">
+                                            Check our highest viewed jobs in the most popular industries
+                                        </p>
+
+                                        <!-- DISPLAY THE MOST POPULAR JOBS-->
+                                        <p style="font-family: sans-serif; font-size: 14px; font-weight: bold; margin: 0; margin-bottom: 15px;">
+                          <span style=" color: #554595;">
+                          <a href="https://www.jobsinkent.com/search?q=Business+Development+Executive" style="text-decoration: none;">
+                            <span style="font-family: 'Calibri', sans-serif; color: #554595; text-decoration: underline;">Business Development Executive</span>
+                          </a></span>
+                                        </p>
+
+                                        <p style="font-family: sans-serif; font-size: 14px; font-weight: bold; margin: 0; margin-bottom: 15px;">
+                          <span style=" color: #554595;">
+                          <a href="https://www.jobsinkent.com/search?q=Commercial+Account+Handler " style="text-decoration: none;">
+                            <span style="font-family: 'Calibri', sans-serif; color: #554595; text-decoration: underline;">Commercial Account Handler</span>
+                          </a></span>
+                                        </p>
+
+                                        <p style="font-family: sans-serif; font-size: 14px; font-weight: bold; margin: 0; margin-bottom: 15px;">
+                          <span style=" color: #554595;">
+                          <a href="https://www.jobsinkent.com/search?q=warehouse+operatives&t=b" style="text-decoration: none;">
+                            <span style="font-family: 'Calibri', sans-serif; color: #554595; text-decoration: underline;">Warehouse Operative</span>
+                          </a></span>
+                                        </p>
+
+                                        <p style="font-family: sans-serif; font-size: 14px; font-weight: bold; margin: 0; margin-bottom: 15px;">
+                          <span style=" color: #554595;">
+                          <a href="https://www.jobsinkent.com/search?q=Finance+Administrator " style="text-decoration: none;">
+                            <span style="font-family: 'Calibri', sans-serif; color: #554595; text-decoration: underline;">Finance Administrator</span>
+                          </a></span>
+                                        </p>
+
+                                        <p style="font-family: sans-serif; font-size: 14px; font-weight: bold; margin: 0; margin-bottom: 15px;">
+                          <span style=" color: #554595;">
+                          <a href="https://www.jobsinkent.com/search?q=Forklift+Drive" style="text-decoration: none;">
+                            <span style="font-family: 'Calibri', sans-serif; color: #554595; text-decoration: underline;">Forklift Driver</span>
+                          </a></span>
+                                        </p>
+                                    </td>
+                                    <!-- END OF THE MOST POPULAR JOBS-->
+                                </tr>
+
+                                <tr>
+                                    <td style="font-family: sans-serif; font-size: 14px; vertical-align: top; border-top: 1px solid #f6f6f6; padding-top: .5rem;" valign="top">
+                                        <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">Check the most popular industries and find the best job for you</p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top">
+                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; box-sizing: border-box; width: 100%;" width="100%">
+                                            <!-- DISPLAY INDUSTRIES -->
+                                            <tbody>
+                                            <table  role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+                                                <tr>
+                                                    <td >
+                                                        <a href="https://www.jobsinkent.com/search?i=25&t=b" style="text-decoration: none;">
+                                                            <div style="text-align: center; padding: 3pt; border:solid #846edb 1pt; border-radius: 4pt; margin:.5rem;">
+                                                                <span style="font-size: 13.5pt; color: #554595;">Administration</span>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="https://www.jobsinkent.com/search?i=1&t=b" style="text-decoration: none;">
+                                                            <div style="text-align: center; padding: 3pt;  border:solid #846edb 1pt; border-radius: 4pt; margin:.5rem;">
+                                                                <span style="font-size: 13.5pt; color: #554595;">Accountancy</span>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="https://www.jobsinkent.com/search?i=21&t=b" style="text-decoration: none;">
+                                                            <div style="text-align: center; padding: 3pt;  border:solid #846edb 1pt; border-radius: 4pt; margin:.5rem;">
+                                                                <span style="font-size: 13.5pt; color: #554595;">Management</span>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td >
+                                                        <a href="https://www.jobsinkent.com/search?i=34&t=b" style="text-decoration: none;">
+                                                            <div style="text-align: center; padding: 3pt; border:solid #846edb 1pt; border-radius: 4pt; margin:.5rem;">
+                                                                <span style="font-size: 13.5pt; color: #554595;">Driving</span>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="https://www.jobsinkent.com/search?i=7&t=b" style="text-decoration: none;">
+                                                            <div style="text-align: center; padding: 3pt;  border:solid #846edb 1pt; border-radius: 4pt; margin:.5rem;">
+                                                                <span style="font-size: 13.5pt; color: #554595;">Construction</span>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="https://www.jobsinkent.com/search?i=22&t=b" style="text-decoration: none;">
+                                                            <div style="text-align: center; padding: 3pt;  border:solid #846edb 1pt; border-radius: 4pt; margin:.5rem;">
+                                                                <span style="font-size: 13.5pt; color: #554595;">Marketing</span>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td >
+                                                        <a href="https://www.jobsinkent.com/search?i=40&t=b" style="text-decoration: none;">
+                                                            <div style="text-align: center; padding: 3pt; border:solid #846edb 1pt; border-radius: 4pt; margin:.5rem;">
+                                                                <span style="font-size: 13.5pt; color: #554595;">Hospitality</span>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="https://www.jobsinkent.com/search?i=36&t=b" style="text-decoration: none;">
+                                                            <div style="text-align: center; padding: 3pt;  border:solid #846edb 1pt; border-radius: 4pt; margin:.5rem;">
+                                                                <span style="font-size: 13.5pt; color: #554595;">Warehouse</span>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="https://www.jobsinkent.com/search?i=50&t=b" style="text-decoration: none;">
+                                                            <div style="text-align: center; padding: 3pt;  border:solid #846edb 1pt; border-radius: 4pt; margin:.5rem;">
+                                                                <span style="font-size: 13.5pt; color: #554595;">Cleaning</span>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- END DISPLAY INDUSTRIES -->
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="font-family: sans-serif; font-size: 14px; vertical-align: top; text-align: center;" valign="top">
+                                        <p style="font-family: sans-serif; font-size: 20px; font-weight: bold; margin:0; margin-bottom: 15px; color: #554595;">Jobsinkent.com, local jobs you won't find on any other job sites</p>
+                                        <p style="font-family: sans-serif; font-size: 20px; font-weight: bold; margin:0; margin-bottom: 15px; color: #554595;">Search all our local jobs online - today!</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- END MAIN CONTENT AREA -->
+                </table>
+                <!-- END CENTERED WHITE CONTAINER -->
+
+                <!-- START FOOTER -->
+                <div class="footer" style="clear: both; margin-top: 10px; text-align: center; width: 100%;">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%">
                         <tr>
-                            <td width="600" valign="top" style="width: 450pt; padding: 0cm 0cm 0cm 0cm;">
-                                <div align="center">
-                                    <table class="MsoNormalTable" border="0" cellspacing="4" cellpadding="0" width="100%" style="width: 100%;">
-                                        <tr>
-                                            <td valign="top" style="background: white; padding: 0cm 0cm 0cm 0cm;">
-                                                <div align="center">
-                                                    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width: 100%;">
-                                                        <tr>
-                                                            <td style="background: #554595; padding: 4.5pt 7.5pt 7.5pt 7.5pt;">
-                                                                <p class="MsoNormal">
-                                                                        <span style="font-family: 'Arial', sans-serif;">
-                                                                            <a href="https://www.jobsinkent.com">
-                                                                                <strong><span style="font-size: 22.5pt; font-family: 'Arial', sans-serif; color: white; text-decoration: none;">jobsinkent.com</span></strong>
-                                                                            </a>
-                                                                            <span style="color: black;"> </span>
-                                                                        </span>
-                                                                    <b><span style="font-size: 13.5pt; font-family: 'Arial', sans-serif; color: white;">Kent's largest jobsite</span></b>
-                                                                    <span style="font-family: 'Arial', sans-serif; color: black;"> </span><span style="font-family: 'Arial', sans-serif;"><o:p></o:p></span>
-                                                                </p>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                                <p class="MsoNormal" align="center" style="text-align: center;">
-                                                    <span style="font-family: 'Arial', sans-serif; display: none;"><o:p>&nbsp;</o:p></span>
-                                                </p>
-                                                <div align="center">
-                                                    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width: 100%;">
-                                                        <tr>
-                                                            <td style="border: none; border-top: solid white 1pt; background: #554595; padding: 18pt 18pt 18pt 18pt;">
-                                                                <h1 align="center" style="margin: 0cm; text-align: center; line-height: 22.5pt; mso-line-height-rule: exactly;">
-                                                                    <span style="font-size: 18pt; color: white; font-weight: normal;">Log-In </span><span style="font-size: 18pt; color: white;">Now</span>
-                                                                    <span style="font-size: 18pt; color: white; font-weight: normal;"> for fast, one-click apply<o:p></o:p></span>
-                                                                </h1>
-                                                                <div align="center">
-                                                                    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="180" style="width: 135pt;">
-                                                                        <tr style="height: 30pt;">
-                                                                            <td style="background: #28a745; padding: 0cm 0cm 0cm 0cm; height: 30pt; border-radius: 4px;">
-                                                                                <p class="MsoNormal" align="center" style="text-align: center;">
-                                                                                        <span style="font-family: 'Arial', sans-serif; color: black;">
-                                                                                            <a href="https://www.jobsinkent.com/jobseekers/profile?utm_source=jbe&amp;utm_medium=search_alert">
-                                                                                                <strong>
-                                                                                                    <span style="font-size: 10.5pt; font-family: 'Arial', sans-serif; color: white; font-weight: normal; text-decoration: none;">Log-in</span>
-                                                                                                </strong>
-                                                                                            </a>
-                                                                                        </span>
-                                                                                    <span style="font-family: 'Arial', sans-serif;"><o:p></o:p></span>
-                                                                                </p>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                                <p class="MsoNormal" align="center" style="text-align: center;">
-                                                    <span style="font-family: 'Arial', sans-serif; display: none;"><o:p>&nbsp;</o:p></span>
-                                                </p>
-                                                <div align="center">
-                                                    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width: 100%;">
-                                                        <tr>
-                                                            <td width="24" valign="top" style="width: 18pt; padding: 0cm 0cm 0cm 0cm;"></td>
-                                                            <td style="border: none; border-top: solid #e9ecef 1pt; padding: 18pt 18pt 18pt 18pt;">
-                                                                <p align="center" style="margin: 0cm; text-align: center; line-height: 22.5pt; mso-line-height-rule: exactly;">
-                                                                    <span style="font-size: 13.5pt; color: #554595;">The latest jobs matching your search: <b>IT &amp; Telecoms jobs in Kent</b><o:p></o:p></span>
-                                                                </p>
-                                                            </td>
-                                                            <td style="border: none; padding: 0cm 0cm 0cm 0cm;" width="24"><p class="MsoNormal">&nbsp;</p></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td width="24" valign="top" style="width: 18pt; padding: 0cm 0cm 0cm 0cm;"></td>
-                                                            <td valign="top" style="padding: 0cm 0cm 0cm 0cm;">
-                                                                <div align="center">
-                                                                    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width: 100%;">
-                                                                        <tr>
-                                                                            <td style="padding: 0cm 0cm 4.5pt 0cm;">
-                                                                                <table class="MsoNormalTable" border="1" cellspacing="4" cellpadding="0" width="100%" style="width: 100%; border: solid #ced4da 1pt;">
-                                                                                    <tr>
-                                                                                        <td width="100%" valign="top" style="width: 100%; border: none; padding: 0cm 0cm 0cm 0cm;">
-                                                                                            <p class="MsoNormal">
-                                                                                                    <span style="font-family: 'Arial', sans-serif;">
-                                                                                                        <a href="https://www.jobsinkent.com/job/2100751?utm_source=jbe&amp;utm_medium=search_alert">
-                                                                                                            <span style="font-size: 10.5pt; font-family: 'Calibri', sans-serif; color: white; text-decoration: none;"><o:p></o:p></span>
-                                                                                                        </a>
-                                                                                                    </span>
-                                                                                            </p>
-                                                                                            <h3 style="margin: 0cm;">
-                                                                                                    <span style="font-size: 12pt; color: #212529;">
-                                                                                                        <a href="https://www.jobsinkent.com/job/2100751?utm_source=jbe&amp;utm_medium=search_alert">
-                                                                                                            <span style="color: #212529; text-decoration: none;">It Service Delivery Manager</span>
-                                                                                                            <span style="color: #212529; text-decoration: none;"><o:p></o:p></span>
-                                                                                                        </a>
-                                                                                                    </span>
-                                                                                            </h3>
-                                                                                            <p class="MsoNormal">
-                                                                                                <span style="font-family: 'Arial', sans-serif;"><o:p>&nbsp;</o:p></span>
-                                                                                            </p>
-                                                                                            <p style="mso-margin-top-alt: 0cm; margin-right: 0cm; margin-bottom: 1.5pt; margin-left: 0cm; line-height: 15pt;">
-                                                                                                <span style="font-size: 12pt; color: #212529;">Kings Hill, Kent, Excellent <o:p></o:p></span>
-                                                                                            </p>
-                                                                                        </td>
-                                                                                        <td valign="top" style="border: none; padding: 0cm 0cm 0cm 0cm; border-radius: 4px;">
-                                                                                            <div align="right">
-                                                                                                <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="80" style="width: 60pt;">
-                                                                                                    <tr style="height: 24pt;">
-                                                                                                        <td style="background: #554595; padding: 0cm 0cm 0cm 0cm; height: 24pt; -webkit-text-size-adjust: none;">
-                                                                                                            <p class="MsoNormal" align="center" style="text-align: center;">
-                                                                                                                    <span style="font-family: 'Arial', sans-serif; color: black;">
-                                                                                                                        <a href="https://www.jobsinkent.com/job/2100751?utm_source=jbe&amp;utm_medium=search_alert">
-                                                                                                                            <strong>
-                                                                                                                                <span
-                                                                                                                                    style="
-                                                                                                                                        font-size: 10.5pt;
-                                                                                                                                        font-family: 'Arial', sans-serif;
-                                                                                                                                        color: white;
-                                                                                                                                        font-weight: normal;
-                                                                                                                                        text-decoration: none;
-                                                                                                                                    "
-                                                                                                                                >
-                                                                                                                                    View / Apply
-                                                                                                                                </span>
-                                                                                                                            </strong>
-                                                                                                                        </a>
-                                                                                                                    </span>
-                                                                                                                <span style="font-family: 'Arial', sans-serif;"><o:p></o:p></span>
-                                                                                                            </p>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                </table>
-                                                                                            </div>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="padding: 0cm 0cm 4.5pt 0cm;">
-                                                                                <table class="MsoNormalTable" border="1" cellspacing="4" cellpadding="0" width="100%" style="width: 100%; border: solid #ced4da 1pt;">
-                                                                                    <tr>
-                                                                                        <td width="100%" valign="top" style="width: 100%; border: none; padding: 0cm 0cm 0cm 0cm;">
-                                                                                            <p class="MsoNormal">
-                                                                                                    <span style="font-family: 'Arial', sans-serif;">
-                                                                                                        <a href="https://www.jobsinkent.com/job/2102521?utm_source=jbe&amp;utm_medium=search_alert">
-                                                                                                            <span style="font-size: 10.5pt; font-family: 'Calibri', sans-serif; color: white; text-decoration: none;"><o:p></o:p></span>
-                                                                                                        </a>
-                                                                                                    </span>
-                                                                                            </p>
-                                                                                            <h3 style="margin: 0cm;">
-                                                                                                    <span style="font-size: 12pt; color: #212529;">
-                                                                                                        <a href="https://www.jobsinkent.com/job/2102521?utm_source=jbe&amp;utm_medium=search_alert">
-                                                                                                            <span style="color: #212529; text-decoration: none;">Senior Data Engineer</span>
-                                                                                                            <span style="color: #212529; text-decoration: none;"><o:p></o:p></span>
-                                                                                                        </a>
-                                                                                                    </span>
-                                                                                            </h3>
-                                                                                            <p class="MsoNormal">
-                                                                                                <span style="font-family: 'Arial', sans-serif;"><o:p>&nbsp;</o:p></span>
-                                                                                            </p>
-                                                                                            <p style="mso-margin-top-alt: 0cm; margin-right: 0cm; margin-bottom: 1.5pt; margin-left: 0cm; line-height: 15pt;">
-                                                                                                    <span style="font-size: 12pt; color: #212529;">
-                                                                                                        Kings Hill, Tonbridge and Malling, Kent, Salary From £39,812K + Excellent Benefits + Remote Working <o:p></o:p>
-                                                                                                    </span>
-                                                                                            </p>
-                                                                                        </td>
-                                                                                        <td valign="top" style="border: none; padding: 0cm 0cm 0cm 0cm; border-radius: 4px;">
-                                                                                            <div align="right">
-                                                                                                <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="80" style="width: 60pt;">
-                                                                                                    <tr style="height: 24pt;">
-                                                                                                        <td style="background: #554595; padding: 0cm 0cm 0cm 0cm; height: 24pt; -webkit-text-size-adjust: none;">
-                                                                                                            <p class="MsoNormal" align="center" style="text-align: center;">
-                                                                                                                    <span style="font-family: 'Arial', sans-serif; color: black;">
-                                                                                                                        <a href="https://www.jobsinkent.com/job/2102521?utm_source=jbe&amp;utm_medium=search_alert">
-                                                                                                                            <strong>
-                                                                                                                                <span
-                                                                                                                                    style="
-                                                                                                                                        font-size: 10.5pt;
-                                                                                                                                        font-family: 'Arial', sans-serif;
-                                                                                                                                        color: white;
-                                                                                                                                        font-weight: normal;
-                                                                                                                                        text-decoration: none;
-                                                                                                                                    "
-                                                                                                                                >
-                                                                                                                                    View / Apply
-                                                                                                                                </span>
-                                                                                                                            </strong>
-                                                                                                                        </a>
-                                                                                                                    </span>
-                                                                                                                <span style="font-family: 'Arial', sans-serif;"><o:p></o:p></span>
-                                                                                                            </p>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                </table>
-                                                                                            </div>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="padding: 0cm 0cm 4.5pt 0cm;">
-                                                                                <table class="MsoNormalTable" border="1" cellspacing="4" cellpadding="0" width="100%" style="width: 100%; border: solid #ced4da 1pt;">
-                                                                                    <tr>
-                                                                                        <td width="100%" valign="top" style="width: 100%; border: none; padding: 0cm 0cm 0cm 0cm;">
-                                                                                            <p class="MsoNormal">
-                                                                                                    <span style="font-family: 'Arial', sans-serif;">
-                                                                                                        <a href="https://www.jobsinkent.com/job/2043308?utm_source=jbe&amp;utm_medium=search_alert">
-                                                                                                            <span style="font-size: 10.5pt; font-family: 'Calibri', sans-serif; color: white; text-decoration: none;"><o:p></o:p></span>
-                                                                                                        </a>
-                                                                                                    </span>
-                                                                                            </p>
-                                                                                            <h3 style="margin: 0cm;">
-                                                                                                    <span style="font-size: 12pt; color: #212529;">
-                                                                                                        <a href="https://www.jobsinkent.com/job/2043308?utm_source=jbe&amp;utm_medium=search_alert">
-                                                                                                            <span style="color: #212529; text-decoration: none;">Data Information Officer</span>
-                                                                                                            <span style="color: #212529; text-decoration: none;"><o:p></o:p></span>
-                                                                                                        </a>
-                                                                                                    </span>
-                                                                                            </h3>
-                                                                                            <p class="MsoNormal">
-                                                                                                <span style="font-family: 'Arial', sans-serif;"><o:p>&nbsp;</o:p></span>
-                                                                                            </p>
-                                                                                            <p style="mso-margin-top-alt: 0cm; margin-right: 0cm; margin-bottom: 1.5pt; margin-left: 0cm; line-height: 15pt;">
-                                                                                                <span style="font-size: 12pt; color: #212529;">Canterbury, Kent, £23,487 To £26,341 Per Annum Pro Rata <o:p></o:p></span>
-                                                                                            </p>
-                                                                                        </td>
-                                                                                        <td valign="top" style="border: none; padding: 0cm 0cm 0cm 0cm; border-radius: 4px;">
-                                                                                            <div align="right">
-                                                                                                <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="80" style="width: 60pt;">
-                                                                                                    <tr style="height: 24pt;">
-                                                                                                        <td style="background: #554595; padding: 0cm 0cm 0cm 0cm; height: 24pt; -webkit-text-size-adjust: none;">
-                                                                                                            <p class="MsoNormal" align="center" style="text-align: center;">
-                                                                                                                    <span style="font-family: 'Arial', sans-serif; color: black;">
-                                                                                                                        <a href="https://www.jobsinkent.com/job/2043308?utm_source=jbe&amp;utm_medium=search_alert">
-                                                                                                                            <strong>
-                                                                                                                                <span
-                                                                                                                                    style="
-                                                                                                                                        font-size: 10.5pt;
-                                                                                                                                        font-family: 'Arial', sans-serif;
-                                                                                                                                        color: white;
-                                                                                                                                        font-weight: normal;
-                                                                                                                                        text-decoration: none;
-                                                                                                                                    "
-                                                                                                                                >
-                                                                                                                                    View / Apply
-                                                                                                                                </span>
-                                                                                                                            </strong>
-                                                                                                                        </a>
-                                                                                                                    </span>
-                                                                                                                <span style="font-family: 'Arial', sans-serif;"><o:p></o:p></span>
-                                                                                                            </p>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                </table>
-                                                                                            </div>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="padding: 0cm 0cm 4.5pt 0cm;">
-                                                                                <table class="MsoNormalTable" border="1" cellspacing="4" cellpadding="0" width="100%" style="width: 100%; border: solid #ced4da 1pt;">
-                                                                                    <tr>
-                                                                                        <td width="100%" valign="top" style="width: 100%; border: none; padding: 0cm 0cm 0cm 0cm;">
-                                                                                            <p class="MsoNormal">
-                                                                                                    <span style="font-family: 'Arial', sans-serif;">
-                                                                                                        <a href="https://www.jobsinkent.com/job/2101973?utm_source=jbe&amp;utm_medium=search_alert">
-                                                                                                            <span style="font-size: 10.5pt; font-family: 'Calibri', sans-serif; color: white; text-decoration: none;"><o:p></o:p></span>
-                                                                                                        </a>
-                                                                                                    </span>
-                                                                                            </p>
-                                                                                            <h3 style="margin: 0cm;">
-                                                                                                    <span style="font-size: 12pt; color: #212529;">
-                                                                                                        <a href="https://www.jobsinkent.com/job/2101973?utm_source=jbe&amp;utm_medium=search_alert">
-                                                                                                            <span style="color: #212529; text-decoration: none;">Php Web Developer</span>
-                                                                                                            <span style="color: #212529; text-decoration: none;"><o:p></o:p></span>
-                                                                                                        </a>
-                                                                                                    </span>
-                                                                                            </h3>
-                                                                                            <p class="MsoNormal">
-                                                                                                <span style="font-family: 'Arial', sans-serif;"><o:p>&nbsp;</o:p></span>
-                                                                                            </p>
-                                                                                            <p style="mso-margin-top-alt: 0cm; margin-right: 0cm; margin-bottom: 1.5pt; margin-left: 0cm; line-height: 15pt;">
-                                                                                                <span style="font-size: 12pt; color: #212529;">Maidstone, Kent, Based On Experience <o:p></o:p></span>
-                                                                                            </p>
-                                                                                        </td>
-                                                                                        <td valign="top" style="border: none; padding: 0cm 0cm 0cm 0cm; border-radius: 4px;">
-                                                                                            <div align="right">
-                                                                                                <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="80" style="width: 60pt;">
-                                                                                                    <tr style="height: 24pt;">
-                                                                                                        <td style="background: #554595; padding: 0cm 0cm 0cm 0cm; height: 24pt; -webkit-text-size-adjust: none;">
-                                                                                                            <p class="MsoNormal" align="center" style="text-align: center;">
-                                                                                                                    <span style="font-family: 'Arial', sans-serif; color: black;">
-                                                                                                                        <a href="https://www.jobsinkent.com/job/2101973?utm_source=jbe&amp;utm_medium=search_alert">
-                                                                                                                            <strong>
-                                                                                                                                <span
-                                                                                                                                    style="
-                                                                                                                                        font-size: 10.5pt;
-                                                                                                                                        font-family: 'Arial', sans-serif;
-                                                                                                                                        color: white;
-                                                                                                                                        font-weight: normal;
-                                                                                                                                        text-decoration: none;
-                                                                                                                                    "
-                                                                                                                                >
-                                                                                                                                    View / Apply
-                                                                                                                                </span>
-                                                                                                                            </strong>
-                                                                                                                        </a>
-                                                                                                                    </span>
-                                                                                                                <span style="font-family: 'Arial', sans-serif;"><o:p></o:p></span>
-                                                                                                            </p>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                </table>
-                                                                                            </div>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="padding: 0cm 0cm 4.5pt 0cm;">
-                                                                                <table class="MsoNormalTable" border="1" cellspacing="4" cellpadding="0" width="100%" style="width: 100%; border: solid #ced4da 1pt;">
-                                                                                    <tr>
-                                                                                        <td width="100%" valign="top" style="width: 100%; border: none; padding: 0cm 0cm 0cm 0cm;">
-                                                                                            <p class="MsoNormal">
-                                                                                                    <span style="font-family: 'Arial', sans-serif;">
-                                                                                                        <a href="https://www.jobsinkent.com/job/2088474?utm_source=jbe&amp;utm_medium=search_alert">
-                                                                                                            <span style="font-size: 10.5pt; font-family: 'Calibri', sans-serif; color: white; text-decoration: none;"><o:p></o:p></span>
-                                                                                                        </a>
-                                                                                                    </span>
-                                                                                            </p>
-                                                                                            <h3 style="margin: 0cm;">
-                                                                                                    <span style="font-size: 12pt; color: #212529;">
-                                                                                                        <a href="https://www.jobsinkent.com/job/2088474?utm_source=jbe&amp;utm_medium=search_alert">
-                                                                                                            <span style="color: #212529; text-decoration: none;">It Assistant</span>
-                                                                                                            <span style="color: #212529; text-decoration: none;"><o:p></o:p></span>
-                                                                                                        </a>
-                                                                                                    </span>
-                                                                                            </h3>
-                                                                                            <p class="MsoNormal">
-                                                                                                <span style="font-family: 'Arial', sans-serif;"><o:p>&nbsp;</o:p></span>
-                                                                                            </p>
-                                                                                            <p style="mso-margin-top-alt: 0cm; margin-right: 0cm; margin-bottom: 1.5pt; margin-left: 0cm; line-height: 15pt;">
-                                                                                                <span style="font-size: 12pt; color: #212529;">Maidstone, Kent, Basic Doe <o:p></o:p></span>
-                                                                                            </p>
-                                                                                        </td>
-                                                                                        <td valign="top" style="border: none; padding: 0cm 0cm 0cm 0cm; border-radius: 4px;">
-                                                                                            <div align="right">
-                                                                                                <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="80" style="width: 60pt;">
-                                                                                                    <tr style="height: 24pt;">
-                                                                                                        <td style="background: #554595; padding: 0cm 0cm 0cm 0cm; height: 24pt; -webkit-text-size-adjust: none;">
-                                                                                                            <p class="MsoNormal" align="center" style="text-align: center;">
-                                                                                                                    <span style="font-family: 'Arial', sans-serif; color: black;">
-                                                                                                                        <a href="https://www.jobsinkent.com/job/2088474?utm_source=jbe&amp;utm_medium=search_alert">
-                                                                                                                            <strong>
-                                                                                                                                <span
-                                                                                                                                    style="
-                                                                                                                                        font-size: 10.5pt;
-                                                                                                                                        font-family: 'Arial', sans-serif;
-                                                                                                                                        color: white;
-                                                                                                                                        font-weight: normal;
-                                                                                                                                        text-decoration: none;
-                                                                                                                                    "
-                                                                                                                                >
-                                                                                                                                    View / Apply
-                                                                                                                                </span>
-                                                                                                                            </strong>
-                                                                                                                        </a>
-                                                                                                                    </span>
-                                                                                                                <span style="font-family: 'Arial', sans-serif;"><o:p></o:p></span>
-                                                                                                            </p>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                </table>
-                                                                                            </div>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </div>
-                                                            </td>
-                                                            <td width="24" valign="top" style="width: 18pt; padding: 0cm 0cm 0cm 0cm;">
-                                                                <div align="center">
-                                                                    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="24" style="width: 18pt;">
-                                                                        <tr style="height: 36pt;">
-                                                                            <td width="24" style="width: 18pt; padding: 0cm 0cm 0cm 0cm; height: 36pt;">
-                                                                                <p class="MsoNormal">
-                                                                                    <span style="font-family: 'Arial', sans-serif;">&nbsp;<o:p></o:p></span>
-                                                                                </p>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                                <p class="MsoNormal" align="center" style="text-align: center;">
-                                                    <span style="font-family: 'Arial', sans-serif; display: none;"><o:p>&nbsp;</o:p></span>
-                                                </p>
-                                                <div align="center">
-                                                    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width: 100%;">
-                                                        <tr>
-                                                            <td style="border: none; border-top: solid #e9ecef 1pt; padding: 18pt 18pt 18pt 18pt;">
-                                                                <p align="center" style="margin: 0cm; text-align: center; line-height: 22.5pt; mso-line-height-rule: exactly;">
-                                                                    <b>
-                                                                        <span style="font-size: 18pt; color: #554595;">Jobsinkent.com has better, more local jobs that you won't find on any other job sites.<o:p></o:p></span>
-                                                                    </b>
-                                                                </p>
-                                                                <p
-                                                                    align="center"
-                                                                    style="mso-margin-top-alt: 0cm; margin-right: 0cm; margin-bottom: 12pt; margin-left: 0cm; text-align: center; line-height: 22.5pt; mso-line-height-rule: exactly;"
-                                                                >
-                                                                    <b>
-                                                                        <span style="font-size: 18pt; color: #554595;">Search all our local jobs online - today!<o:p></o:p></span>
-                                                                    </b>
-                                                                </p>
-                                                                <div align="center">
-                                                                    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="180" style="width: 135pt;">
-                                                                        <tr style="height: 30pt;">
-                                                                            <td style="background: #28a745; padding: 0cm 0cm 0cm 0cm; height: 30pt; border-radius: 4px;">
-                                                                                <p class="MsoNormal" align="center" style="text-align: center;">
-                                                                                        <span style="font-family: 'Arial', sans-serif; color: black;">
-                                                                                            <a href="https://www.jobsinkent.com/search?utm_source=jbe&amp;utm_medium=search_alert">
-                                                                                                <strong>
-                                                                                                    <span style="font-size: 10.5pt; font-family: 'Arial', sans-serif; color: white; font-weight: normal; text-decoration: none;">
-                                                                                                        Search Jobs
-                                                                                                    </span>
-                                                                                                </strong>
-                                                                                            </a>
-                                                                                        </span>
-                                                                                    <span style="font-family: 'Arial', sans-serif;"><o:p></o:p></span>
-                                                                                </p>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <p class="MsoNormal" align="center" style="text-align: center;">
-                                    <span style="font-family: 'Arial', sans-serif; display: none;"><o:p>&nbsp;</o:p></span>
-                                </p>
-                                <div align="center">
-                                    <table class="MsoNormalTable" border="0" cellspacing="4" cellpadding="0" width="100%" style="width: 100%;">
-                                        <tr>
-                                            <td valign="top" style="padding: 0cm 0cm 0cm 0cm;">
-                                                <div align="center">
-                                                    <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width: 100%;">
-                                                        <tr>
-                                                            <td valign="top" style="padding: 18pt 18pt 72pt 18pt;">
-                                                                <p align="center" style="mso-margin-top-alt: 0cm; margin-right: 0cm; margin-bottom: 9pt; margin-left: 0cm; text-align: center; line-height: 13.5pt;">
-                                                                        <span style="font-size: 9pt; color: #212529;">
-                                                                            This email was sent to
-                                                                            <a href="mailto:spirosvelos@gmail.com">
-                                                                                <strong><span style="font-family: 'Arial', sans-serif; color: #554595; font-weight: normal; text-decoration: none;">spirosvelos@gmail.com</span></strong>
-                                                                            </a>
-                                                                            from JIK Software Ltd, trading as
-                                                                            <a href="https://www.jobsinkent.com">
-                                                                                <strong><span style="font-family: 'Arial', sans-serif; color: #554595; text-decoration: none;">jobsinkent.com</span></strong>
-                                                                            </a>
-                                                                            . <o:p></o:p>
-                                                                        </span>
-                                                                </p>
-                                                                <p align="center" style="mso-margin-top-alt: 0cm; margin-right: 0cm; margin-bottom: 9pt; margin-left: 0cm; text-align: center; line-height: 13.5pt;">
-                                                                        <span style="font-size: 9pt; color: #212529;">
-                                                                            Whilst reasonable precaution has been taken to minimise risks, we cannot accept liability for any damage which you sustain as a result of software viruses. You
-                                                                            should therefore carry out your own virus checks before opening any attachment. <o:p></o:p>
-                                                                        </span>
-                                                                </p>
-                                                                <p align="center" style="mso-margin-top-alt: 0cm; margin-right: 0cm; margin-bottom: 9pt; margin-left: 0cm; text-align: center; line-height: 13.5pt;">
-                                                                        <span style="font-size: 9pt; color: #212529;">
-                                                                            <a href="https://www.jobsinkent.com/jobseekers/profile"><span style="color: #554595;">Click here</span></a> to manage your email preferences. <o:p></o:p>
-                                                                        </span>
-                                                                </p>
-                                                                <p align="center" style="margin: 0cm; text-align: center; line-height: 13.5pt;">
-                                                                    <span style="font-size: 9pt; color: #212529;">© 2018 JIK Software Ltd <o:p></o:p></span>
-                                                                </p>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
+                            <td class="content-block" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; color: #999999; font-size: 12px; text-align: center;" valign="top" align="center">
+                                <span class="apple-link" style="color: #999999; font-size: 12px; text-align: center;">This email was sent from JIK Software Ltd, trading as <a href="https://www.jobsinkent.com" target="_blank" style="text-decoration: underline; font-size: 12px;text-align: center;"><span class="apple-link" style="color: #554595;">jobsinkent.com </span></a></span>
+
                             </td>
                         </tr>
+
+                        <tr>
+                            <td class="content-block" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; color: #999999; font-size: 12px; text-align: center;" valign="top" align="center">
+                    <span class="apple-link" style="color: #999999; font-size: 12px; text-align: center;">Whilst reasonable precaution has been taken to minimise risks, we cannot accept liability
+                    <br>for any damage which you sustain as a result of software viruses. You should therefore
+                    <br>carry out your own virus checks before opening any attachment. </span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="content-block powered-by" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; color: #999999; font-size: 12px; text-align: center;" valign="top" align="center">
+                                <a href="https://www.jobsinkent.com/jobseekers/login"  target="_blank" style="color: #999999; font-size: 12px; text-align: center; text-decoration: none;"><span class="apple-link" style="color: #554595;">Click here</span></a> to manage your email preferences.
+                                <br><br>© 2022 JIK Software Ltd
+                            </td>
+                        </tr>
+
                     </table>
                 </div>
-            </td>
-        </tr>
-    </table>
-    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
-    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
-</div>
+                <!-- END FOOTER -->
+
+            </div>
+        </td>
+        <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top">&nbsp;</td>
+    </tr>
+</table>
 </body>
 </html>

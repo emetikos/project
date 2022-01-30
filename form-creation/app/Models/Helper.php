@@ -14,7 +14,8 @@ class Helper extends Model
     protected $fillable = [
         'formId',
         'formName',
-        'inputValues'
+        'inputValues',
+        'version'
     ];
 
 }

@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Models\EmailUser;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -29,11 +30,11 @@ class SendMail extends Mailable
     public function build()
     {
 
-        return $this->from('info@jiksoftware.ltd.uk')
-                     ->replyTo(['address' => 'info@jiksoftware.ltd.uk'])
-                     ->view('emails.testMail');
+        return $this->from('ben@jiksoftware.ltd.uk')
+                    ->subject("New 'direct employer search' on JobsInKent.com - find your ideal job today...")
+                    ->replyTo(['address' => 'bounce@jiksoftware.ltd.uk'])
+                    ->view('emails.sendmail');
 
 
-//        return $this->markdown('emails.sendmail');
     }
 }

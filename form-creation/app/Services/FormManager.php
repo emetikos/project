@@ -11,10 +11,12 @@ use function PHPUnit\Framework\fileExists;
 
 class FormManager
 {
-    const CUSTOM_TEMPLATES = '/var/www/form-creation/templates/';
+
 //    USERS FOR TESTING
     const USER_1 = 'gd5e1fbbc0b9b23333f1b68b2922254671391140';
     const USER_2 = 'cd5e1fbbc0b9b23333f1b68b2922254671391140';
+    const USER_3 = 'ad5e1fbbc0b9b23333f1b68b2922254671391140';
+    const USER_4 = 'zd5e1fbbc0b9b23333f1b68b2922254671391140';
 
 
     public function __construct() {
@@ -30,58 +32,30 @@ class FormManager
 
         $error = "page not found";
 
-        $template_path = self::CUSTOM_TEMPLATES.$hash.'/'.$hash;
-
-        if (file_exists($template_path)){
-
-            return File::get($template_path.'.html');
+        if (!resource_path('templates/'.$hash)){
+            return template($hash.'/'.$hash);
         }
+        // check if the form exist in the table
         if (Helper::where('formId', $hash)->value('formId')) {
 
-            $config = Helper::where('formId', $hash)->first();
+            // get the latest version of the form
+            $config = Helper::where('formId', $hash)
+                            ->orderBy('version', 'DESC')
+                            ->first();
+
+
             $fields = json_decode($config->inputValues,true);
+
             $name = $config->formName;
 
             return view('pages.createForm',[
                 'fields' => $fields,
                 'name' => $name
             ]);
-        }else{
+        }
+        else{
             return view('pages.createForm',['error' => $error]);
         }
-    }
-
-    /**
-     *
-     * @param $hash
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
-     */
-    public function showUserForm($hash,$userHash) {
-
-        $error = "Form not found";
-
-
-        if (Form::where('form_id', $hash)->value('form_id')) {
-            $config = Helper::where('formId', $hash)->latest()->first();
-            $name = $config->formName;
-
-
-            $allData = Form::where('form_id', $hash)
-                            ->where('user_id', $userHash)
-                            ->latest()
-                            ->first();
-
-            $formData = json_decode($allData->form_data, true);
-
-
-            return view('pages.showForm', [
-                'formData' => $formData,
-                'formName' => $name
-            ]);
-        }else{
-            return view('pages.showForm',['error' => $error]);
-        }
-
     }
 
     /**
@@ -95,20 +69,22 @@ class FormManager
         $allData = [];
 
 
-
-        $user_hash = 'gd5e1fbbc0b9b23333f1b68b2922254671391140';
+        $user_hash = self::USER_1;
         $formId = $request['formId'];
-//      dd($request);
+
 
         $formExists = Form::where('user_id',$user_hash )->first();
 
-        $formAttributes = Helper::where('formId', $formId)->first();
+        $formAttributes = Helper::where('formId', $formId)
+                                ->orderBy('version', 'DESC')
+                                ->first();
+
         $formAttributes = json_decode($formAttributes->inputValues,true);
 
         $formData = $request->request;
         foreach ($formData as $key => $value){
             $data[$key] = $value;
-        };
+        }
 
         foreach ($formAttributes as $attribute){
             foreach ($attribute as $key => $value){
@@ -139,6 +115,44 @@ class FormManager
     }
 
     /**
+     *
+     * @param $hash
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function showUserForm($hash,$userHash) {
+
+        $error = "Form not found";
+
+
+        if (Form::where('form_id', $hash)->value('form_id')) {
+
+            $config = Helper::where('formId', $hash)
+                            ->orderBy('version', 'DESC')
+                            ->first();
+            $name = $config->formName;
+
+
+            $allData = Form::where('form_id', $hash)
+                            ->where('user_id', $userHash)
+                            ->orderBy('version', 'DESC')
+                            ->first();
+
+            $formData = json_decode($allData->form_data, true);
+
+
+            return view('pages.showForm', [
+                'formData' => $formData,
+                'formName' => $name
+            ]);
+        }else{
+            return view('pages.showForm',['error' => $error]);
+        }
+
+    }
+
+
+
+    /**
      * @param $hash
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
@@ -146,40 +160,57 @@ class FormManager
 
         $error = "Form not found";
 
-
         if (Form::where('form_id', $hash)->value('form_id')) {
-            $config = Helper::where('formId', $hash)->first();
+            $config = Helper::where('formId', $hash)
+                            ->orderBy('version', 'DESC')
+                            ->first();
             $name = $config->formName;
+            $formV = $config->version;
 
 
             $allData = Form::where('form_id', $hash)
                             ->where('user_id',$userHash)
-                            ->latest()
+                            ->orderBy('version', 'DESC')
                             ->first();
+            $dataFV = $allData->form_version;
+
+            if ($formV === $dataFV){
+
+                $formData = json_decode($allData->form_data, true);
 
 
-            $formData = json_decode($allData->form_data, true);
+                return view('pages.updateForm', [
+                    'formData' => $formData,
+                    'formName' => $name
+                ]);
+            }else{
+                $formData = json_decode($config->inputValues,true);
+
+                $name = " The form's version is been updated. Please resubmit your form";
+
+                return view('pages.updateForm', [
+                    'formData' => $formData,
+                    'formName' => $name
+                ]);
+            }
 
 
-            return view('pages.updateForm', [
-                'formData' => $formData,
-                'formName' => $name
-            ]);
         }else{
             return view('pages.updateForm',['error' => $error]);
         }
     }
 
     public function updateUserInformation($request){
-        $user_hash = 'gd5e1fbbc0b9b23333f1b68b2922254671391140';
+        $user_hash = self::USER_2;
         $form_hash = $request['formId'];
         $allData = [];
         $data = [];
 
 
+
             $config = Form::where('form_id', $form_hash)
                             ->where('user_id', $user_hash)
-                            ->latest()
+                            ->orderBy('version', 'DESC')
                             ->first();
 
 

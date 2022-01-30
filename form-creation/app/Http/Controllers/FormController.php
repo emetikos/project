@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\FormFieldsRequest;
 use App\Models\Form;
 use App\Models\Helper;
 use App\Services\FormManager;
@@ -40,13 +41,14 @@ class FormController extends Controller
      * @param Request $request
      * @return string
      */
-    public function store(Request $request){
-
+    public function store(Request $request)
+    {
         $form = new FormManager();
         return $form->saveUserInformation($request);
     }
 
-    public function update($hash,$userHash){
+    public function update($hash,$userHash)
+    {
 
         $form = new FormManager();
         return $form->loadFormToUpdate($hash,$userHash);
@@ -57,7 +59,6 @@ class FormController extends Controller
         $form = new FormManager();
         return $form->updateUserInformation($request);
     }
-
 
 
 

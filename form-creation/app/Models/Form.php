@@ -18,11 +18,11 @@ class Form extends Model
         'user_id',
         'form_data',
         'version',
+        'form_version',
         'deleted_data'
     ];
 
-    public static function getAllData()
-    {
-        return Form::all();
+    public function formHelper(){
+        return $this->hasMany(Helper::class);
     }
 }

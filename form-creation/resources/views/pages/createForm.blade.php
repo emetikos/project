@@ -49,10 +49,8 @@
                                 </div>
                             @endif
 
-                        @if($element['type'] === 'submit')
-                            <button type="{{ $element['type'] }}" class="{{ $element['class'] }}" name="{{ $element['name'] }}">Submit</button>
-                        @endif
                     @endforeach
+                            <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form>
             @endisset

@@ -17,21 +17,26 @@
 
                         @if($element['type'] === 'hidden')
                             <div class="form-group">
-                                <input type="{{ $element['type'] }}" class="{{ $element['class'] }}" name="{{ $element['name'] }}" value="{{ $element['userValue'] }}">
+                                <input type="{{ $element['type'] }}" class="{{ $element['class'] }}" name="{{ $element['name'] }}"
+                                       @isset($element['userValue']) value="{{ $element['userValue'] }}" @endisset>
+
                             </div>
                         @endif
 
                         @if($element['type'] === 'text')
                             <div class="form-group">
 {{--                                <label for="{{ $element['id'] }}">Your current {{ ucfirst( $element['label'] ) }} : {{ $element['userValue'] }}</label>--}}
-                                <input type="{{ $element['type'] }}" class="{{ $element['class'] }}" id="{{ $element['id'] }}" placeholder="click to change your {{ ucfirst(trans($element['name'])) }} "  name="{{ $element['name'] }}">
+                                <input type="{{ $element['type'] }}" class="{{ $element['class'] }}" id="{{ $element['id'] }}"
+                                       @isset($element['userValue'])placeholder="{{ $element['userValue'] }}" @endisset
+                                       @unless(@isset($element['userValue'])) placeholder="enter your name" @endunless
+                                       name="{{ $element['name'] }}">
                             </div>
                         @endif
 
                         @if($element['type'] === 'email')
                             <div class="form-group">
 {{--                                <label for="{{ $element['id'] }}">Your current {{ ucfirst( $element['label'] ) }} : {{ $element['userValue'] }}</label>--}}
-                                <input type="{{ $element['type'] }}" class="{{ $element['class'] }}" name="{{ $element['name'] }}" placeholder="click to change your {{ ucfirst(trans($element['name'])) }} ">
+                                <input type="{{ $element['type'] }}" class="{{ $element['class'] }}" name="{{ $element['name'] }}" placeholder=" click to change your {{ ucfirst(trans($element['name'])) }} ">
                             </div>
                         @endif
 

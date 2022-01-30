@@ -1,22 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jobSeeker - Mail</title>
-
-    <style>
-        @media (max-width: 480px) {
-            .greeting-header {
-                font-size: .5rem;
-            }
-        }
-    </style>
-
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv=Content-Type content="text/html; charset=utf-8"><meta name=Generator content="Microsoft Word 15 (filtered medium)"><style><!--
+        /* Font Definitions */
+        @font-face
+        {font-family:"Cambria Math";
+            panose-1:2 4 5 3 5 4 6 3 2 4;}
+        @font-face
+        {font-family:Calibri;
+            panose-1:2 15 5 2 2 2 4 3 2 4;}
+        /* Style Definitions */
+        p.MsoNormal, li.MsoNormal, div.MsoNormal
+        {margin:0cm;
+            font-size:11.0pt;
+            font-family:"Calibri",sans-serif;}
+        h1
+        {mso-style-priority:9;
+            mso-style-link:"Heading 1 Char";
+            mso-margin-top-alt:auto;
+            margin-right:0cm;
+            mso-margin-bottom-alt:auto;
+            margin-left:0cm;
+            font-size:24.0pt;
+            font-family:"Arial",sans-serif;
+            font-weight:bold;}
+        h3
+        {mso-style-priority:9;
+            mso-style-link:"Heading 3 Char";
+            mso-margin-top-alt:auto;
+            margin-right:0cm;
+            mso-margin-bottom-alt:auto;
+            margin-left:0cm;
+            font-size:13.5pt;
+            font-family:"Arial",sans-serif;
+            font-weight:bold;}
+        a:link, span.MsoHyperlink
+        {mso-style-priority:99;
+            color:blue;
+            text-decoration:underline;}
+        span.Heading1Char
+        {mso-style-name:"Heading 1 Char";
+            mso-style-priority:9;
+            mso-style-link:"Heading 1";
+            font-family:"Arial",sans-serif;
+            font-weight:bold;}
+        span.Heading3Char
+        {mso-style-name:"Heading 3 Char";
+            mso-style-priority:9;
+            mso-style-link:"Heading 3";
+            font-family:"Arial",sans-serif;
+            font-weight:bold;}
+        .MsoChpDefault
+        {mso-style-type:export-only;}
+        @page WordSection1
+        {size:612.0pt 792.0pt;
+            margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+        div.WordSection1
+        {page:WordSection1;}
+        --></style>
 </head>
-<body style="background-color: #F0F0F0; max-width: 60rem;">
-<div class="container" style="margin: auto; padding: 0 10px;">
+<body lang="EN-GB" link="blue" vlink="#954F72" style="word-wrap: break-word;">
+<div class="WordSection1" style="margin: auto; padding: 0 10px;">
 
     <div class="header" style="background-color: #554595; color: white; font-size: 1.125rem; font-weight: bold; text-align: center; padding: 0 10px;"><span class="span-header" style="font-size: 2.25rem;">jobsinkent.com</span> Kent's largest jobsite</div>
 

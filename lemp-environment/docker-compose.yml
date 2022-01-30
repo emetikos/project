@@ -40,7 +40,7 @@ services:
     nginx:
       container_name: dmh-nginx
       build:
-        context: ..
+        context: ./nginx
 #        args:
 #          - CHANGE_SOURCE=${CHANGE_SOURCE}
 #          - PHP_UPSTREAM_CONTAINER=${NGINX_PHP_UPSTREAM_CONTAINER}
@@ -68,7 +68,8 @@ services:
 
 
     php:
-      build: ../../php-fpm
+#      build: ../../php-fpm
+      build: ./php-fpm
       container_name: dmh-php
       working_dir: /var/www
       volumes:

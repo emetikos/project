@@ -21,6 +21,7 @@ class CreateHelpersTable extends Migration
             $table->timestamps();
 
         });
+
     }
 
     /**

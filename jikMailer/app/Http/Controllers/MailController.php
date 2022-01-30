@@ -43,7 +43,7 @@ class MailController extends Controller
         $users = EmailUser::where([
             'is_sent' => false,
             'has_unsubscribed' => false,
-        ])->limit(1001)
+        ])->limit(505)
             ->get();
 
         foreach ($users as $user){

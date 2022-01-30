@@ -18,23 +18,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/test', function () {
-    return view('emails.testMail');
-});
+## WELCOME PAGE ##
+Route::get('/', [CoreController::class, 'index']);
 
-Route::get('/mail', function () {
-    return view('emails.sendmail');
-});
-
-
-
-
-
+## SHOW  USERS ##
 Route::get('/users', [MailController::class, 'users']);
-Route::get('/applications', [MailController::class, 'userApplications']);
 
-
-//Route::get('/mail', function() {
-//
-//    Mail::to('spirosvelos@gmail.com')->send(new SendMail());
-//});
+## SEND EMAIL TO USERS ##
+Route::get('/mail', [MailController::class, 'sendMail']);
